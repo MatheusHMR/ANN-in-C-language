@@ -128,9 +128,14 @@ int main() {
     free(training_data[0]);
     free(training_data[1]);
     free(training_data);
+    free(testing_data[0]);
+    free(testing_data[1]);
+    free(testing_data);
     free(trained_sinaptic_weights);
     freeMatrix(letterA, 8);
     freeMatrix(letterB, 8);
+    freeMatrix(test1, 8);
+    freeMatrix(test2, 8);
 
     return 0;
 }
